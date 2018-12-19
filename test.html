@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TEST</title>
+</head>
+<body>
+  <script>
+    window.onload = function(){
+      // document.getElementById("myAudio").play();
+      setTimeout(function(){
+        let iframe = document.createElement("iframe");
+        iframe.src="hbd.mp3";
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
+        let audio = document.createElement("audio");
+        audio.src="hbd.mp3";
+        audio.autoplay="autoplay";
+        audio.loop="loop";
+        document.body.appendChild(audio);
+      }, 18000);
+    }
+  </script>
+</body>
+</html>
